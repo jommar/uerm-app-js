@@ -13,6 +13,10 @@ $(document).ready(function () {
     // }(jQuery));
 
     (function ($) {
+        $.fn.undefined = function () { }
+    }(jQuery));
+
+    (function ($) {
         $.fn.saveClinicalAbstract = async function () {
             var $obj = this;
             var data = {
